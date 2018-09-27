@@ -10,7 +10,7 @@ namespace RomanNumeralConversions.Test
         [InlineData(1, "I")]
         public void Convert_A_Number_To_A_Roman_Numeral(int number, string expectedResult)
         {
-            string result = NumbersToRoman.Conversions(number);
+            string result = NumberToRoman.ConvertToRoman(number);
 
             Assert.Equal(expectedResult, result);
         }
