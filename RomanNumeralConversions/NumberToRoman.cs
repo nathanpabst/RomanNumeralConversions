@@ -14,11 +14,17 @@ namespace RomanNumeralConversions
             {
                 for (var i = 0; i < number; i++)
                 {
-                    return romanNumeral += "I";
+                    romanNumeral += "I";
                 }
                 Console.WriteLine(romanNumeral.ToString());
             }
-            return "";
+            else if (number == 5)
+            {
+                romanNumeral = "V";
+            }
+            Console.WriteLine(romanNumeral.ToString());
+
+            return romanNumeral;
 
         }
 
