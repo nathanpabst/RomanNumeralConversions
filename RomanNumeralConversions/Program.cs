@@ -1,5 +1,4 @@
 ﻿using System;
-using RomanNumeralConversions;
 
 namespace RomanNumeralConversions
 {
@@ -7,9 +6,8 @@ namespace RomanNumeralConversions
     {
         static void Main(string[] args)
         {
-            var getNumeral = new NumberToRoman();
-            getNumeral.ConvertToRoman(1);
-            Console.WriteLine(getNumeral);
+            var NumberToRoman = new NumberToRoman();
+            NumberToRoman.ConvertToRoman(1);
 
             Console.Read();
         }
