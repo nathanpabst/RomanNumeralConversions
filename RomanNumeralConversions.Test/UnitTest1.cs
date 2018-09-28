@@ -8,7 +8,7 @@ namespace RomanNumeralConversions.Test
     {
         [Theory]
         //[InlineData(1, "I")]
-        [InlineData(5, "V")]
+        [InlineData(7, "VII")]
         public void Convert_A_Number_To_A_Roman_Numeral(int number, string romanNumeral)
         {
 

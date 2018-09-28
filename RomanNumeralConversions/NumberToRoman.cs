@@ -8,7 +8,6 @@ namespace RomanNumeralConversions
     {
         public static string ConvertToRoman(int number)
         {
-
             var romanNumeral = "";
             if (number < 4)
             {
@@ -16,17 +15,25 @@ namespace RomanNumeralConversions
                 {
                     romanNumeral += "I";
                 }
-                Console.WriteLine(romanNumeral.ToString());
             }
             else if (number == 5)
             {
                 romanNumeral = "V";
             }
-            Console.WriteLine(romanNumeral.ToString());
+            else if (number > 5 && number < 9)
+            {
+                romanNumeral = "V";
+                number -= 5;
+                for (var i = 0; i < number; i++)
+                {
+                    romanNumeral += "I";
+                }
+                Console.WriteLine(romanNumeral.ToString());
+            }
 
             return romanNumeral;
-
         }
-
     }
+
 }
+
