@@ -33,6 +33,10 @@ namespace RomanNumeralConversions
             {
                 romanNumeral = "IV";
             }
+            else if (number == 9)
+            {
+                romanNumeral = "IX";
+            }
                 Console.WriteLine(romanNumeral.ToString());
 
             return romanNumeral;

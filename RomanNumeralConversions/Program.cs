@@ -7,7 +7,7 @@ namespace RomanNumeralConversions
         static void Main(string[] args)
         {
             var NumberToRoman = new NumberToRoman();
-            NumberToRoman.ConvertToRoman(4);
+            NumberToRoman.ConvertToRoman(9);
 
             Console.Read();
         }
