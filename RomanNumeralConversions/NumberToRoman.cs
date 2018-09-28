@@ -28,8 +28,12 @@ namespace RomanNumeralConversions
                 {
                     romanNumeral += "I";
                 }
-                Console.WriteLine(romanNumeral.ToString());
             }
+            else if (number == 4)
+            {
+                romanNumeral = "IV";
+            }
+                Console.WriteLine(romanNumeral.ToString());
 
             return romanNumeral;
         }
