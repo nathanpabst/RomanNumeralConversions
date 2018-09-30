@@ -6,8 +6,12 @@ namespace RomanNumeralConversions
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Please enter a number between 1 and 3999");
+            var userInput = int.Parse(Console.ReadLine());
             var NumberToRoman = new NumberToRoman();
-            NumberToRoman.ConvertToRoman(9);
+            var romanOutput = NumberToRoman.ConvertToRoman(userInput);
+
+            Console.WriteLine(romanOutput);
 
             Console.Read();
         }
