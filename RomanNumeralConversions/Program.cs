@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Linq;
+using System.Collections.Generic;
+using System.Text;
 
 namespace RomanNumeralConversions.Conversions
 {
@@ -13,12 +15,17 @@ namespace RomanNumeralConversions.Conversions
             var evalInput = userInput.ToString().Count();
             if (evalInput == 1)
             {
-            var NumberToRoman = new SingleDigits();
-            romanOutput = SingleDigits.ConvertToRoman(userInput);
+                var singleDigits = new SingleDigits();
+                romanOutput = SingleDigits.ConvertToRoman(userInput);
+            }
+            else if (evalInput == 2)
+            {
+                var dosDigits = new DosDigits();
+                romanOutput = DosDigits.ConvertToRoman(userInput.ToString().Count());
             }
 
             Console.WriteLine(romanOutput);
-
+            
             Console.Read();
         }
     }
