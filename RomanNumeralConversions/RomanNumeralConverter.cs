@@ -37,6 +37,10 @@ namespace RomanNumeralConversions
             {
                 return Ones[numArray[0]];
             }
+            if (numToCheck.Count == 2)
+            {
+                return Tens[numArray[0]] + Ones[numArray[1]];
+            }
 
             return "Invalid input";
         }
