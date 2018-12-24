@@ -25,6 +25,8 @@ namespace RomanNumeralConversions
 
         public string ConvertNumToRoman(int number)
         {
+            // stack class allows a last-in-first-out collection of objects and the ability to add or 'Push' elements to the stack
+            // modulus operation divides the number by ten to determine the count or length of the number..single digits = 1, double digits = tens, etc. 
             var numToCheck = new Stack<int>();
             while (number != 0)
             {
