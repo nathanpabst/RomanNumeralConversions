@@ -36,12 +36,12 @@ namespace RomanNumeralConversions.Test
         [InlineData(649, "DCXLIX")]
         [InlineData(798, "DCCXCVIII")]
         [InlineData(891, "DCCCXCI")]
-        //        //[InlineData(1000, "M")]
-        //        //[InlineData(1004, "MIV")]
-        //        //[InlineData(1006, "MVI")]
-        //        //[InlineData(1023, "MXXIII")]
-        //        //[InlineData(2014, "MMXIV")]
-        //        //[InlineData(3999, "MMMCMXCIX")]
+        [InlineData(1000, "M")]
+        [InlineData(1004, "MIV")]
+        [InlineData(1006, "MVI")]
+        [InlineData(1023, "MXXIII")]
+        [InlineData(2014, "MMXIV")]
+        [InlineData(3999, "MMMCMXCIX")]
 
         public void Convert_A_Number_To_A_Roman_Numeral(int number, string expResult)
         {
