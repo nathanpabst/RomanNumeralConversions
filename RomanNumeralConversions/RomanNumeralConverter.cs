@@ -41,6 +41,10 @@ namespace RomanNumeralConversions
             {
                 return Tens[numArray[0]] + Ones[numArray[1]];
             }
+            if (numToCheck.Count == 3)
+            {
+                return Hundreds[numArray[0]] + Tens[numArray[1]] + Ones[numArray[2]];
+            }
 
             return "Invalid input";
         }
