@@ -21,7 +21,7 @@ namespace RomanNumeralConversions.Conversions
             else if (evalInput == 2)
             {
                 var dosDigits = new DosDigits();
-                romanOutput = DosDigits.ConvertToRoman(userInput.ToString().Count());
+                romanOutput = DosDigits.ConvertToRoman(userInput);
             }
 
             Console.WriteLine(romanOutput);
